@@ -1,6 +1,6 @@
 <?php
 namespace App\Http\Controllers;
-use cloudinary;
+use Cloudinary\Cloudinary;
 use Illuminate\Http\Request;
 
 class FileUploadController extends Controller
@@ -12,7 +12,7 @@ class FileUploadController extends Controller
 
     public function storeUploads(Request $request)
     {
-        $response = cloudinary()->upload($request->file('file')->getRealPath())->getSecurePath();
+        $response = Cloudinary::upload($request->file('file')->getRealPath())->getSecurePath();
 
         dd($response);
 
