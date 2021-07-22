@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\PublicController;
+use App\Http\Controllers\FileUploadController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +21,7 @@ use App\Http\Controllers\PublicController;
 Route::get('/', [App\Http\Controllers\PublicController::class, 'index'])->name('index');
 
 Route::get('/upload', [App\Http\Controllers\FileUploadController::class, 'showUploadForm'])->name('upload');
-// Route::get('/upload', [App\Http\Controllers\FileUploadController::class, 'storeUploads'])->name('upload');
+Route::post('/upload', [App\Http\Controllers\FileUploadController::class, 'storeUploads'])->name('upload');
 
 Route::get('/post/show/{post}', [App\Http\Controllers\PublicController::class, 'show'])->name('post.show');
 Route::get('/category/show/{category}', [App\Http\Controllers\PublicController::class, 'category'])->name('category.show');
