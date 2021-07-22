@@ -19,6 +19,9 @@ use App\Http\Controllers\PublicController;
 
 Route::get('/', [App\Http\Controllers\PublicController::class, 'index'])->name('index');
 
+Route::get('/upload', [App\Http\Controllers\FileUploadController::class, 'showUploadForm'])->name('upload');
+// Route::post('/upload', [App\Http\Controllers\FileUploadController::classstoreUploads');
+
 Route::get('/post/show/{post}', [App\Http\Controllers\PublicController::class, 'show'])->name('post.show');
 Route::get('/category/show/{category}', [App\Http\Controllers\PublicController::class, 'category'])->name('category.show');
 
