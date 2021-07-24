@@ -31,7 +31,7 @@ class PostController extends Controller
             'description' => 'required'
         ]);
 
-        $image = $request->file('file');
+        $image = $request->file('image');
 
         //get name original file
         $image_name = $image->getClientOriginalName();
@@ -39,7 +39,7 @@ class PostController extends Controller
         $pastas = random_int(1,99);
 
         // $image_url = cloudinary()->upload($image->getRealPath())->getSecurePath();
-        $image_url = $request->file('file')->storeOnCloudinary('deleteme/'.$pastas)->getSecurePath();
+        $image_url = $request->file('image')->storeOnCloudinary('deleteme/'.$pastas)->getSecurePath();
 
         //save local
         // $image->move(public_path('images'), $image_name);
