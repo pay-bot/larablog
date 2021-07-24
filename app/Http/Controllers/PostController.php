@@ -31,8 +31,27 @@ class PostController extends Controller
             'description' => 'required'
         ]);
 
-        $file_name = $request->image->getClientOriginalName();
-        $image = $request->image->storeAs('thumbnail', $file_name);
+        $image = $request->file('file');
+
+        //get name original file
+        $image_name = $image->getClientOriginalName();
+        //test random create past oncloud
+        $pastas = random_int(1,99);
+
+        // $image_url = cloudinary()->upload($image->getRealPath())->getSecurePath();
+        $image_url = $request->file('file')->storeOnCloudinary('deleteme/'.$pastas)->getSecurePath();
+
+        //save local
+        // $image->move(public_path('images'), $image_name);
+       
+        //method to save database
+        $image = new Post();
+        $image->image_name = $image_name;
+        $image->image_url = $image_url;
+
+        $image->save();
+
+        
 
         Post::create([
             'user_id' => auth()->user()->id,
