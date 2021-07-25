@@ -24,7 +24,7 @@
                 </div>
                 <div class="form-group">
                     <label for="image">Image</label>
-                    <input type="file" id="image" value="{{ csrf_token() }}" class="form-control @error('image') is-invalid @enderror" name="image">
+                    <input type="file" id="image" value="{{ csrf_token() }}" class="form-control @error('image') is-invalid @enderror" name="img">
                     @error('title')
                     <span class="text-danger">{{ $message }}</span>
                     @enderror

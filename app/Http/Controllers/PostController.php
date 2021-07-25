@@ -23,43 +23,24 @@ class PostController extends Controller
 
     public function store(Request $request)
     {
-
+        
         $this->validate($request, [
             'title' => 'required',
             'category_id' => 'required',
-            'image' => 'required|mimes:jpg,jpeg,png',
+            'img' => 'required|image',
+
             'description' => 'required'
         ]);
-
-        $image = $request->file('image');
-
-        //get name original file
-        $image_name = $image->getClientOriginalName();
-        //test random create past oncloud
-        $pastas = random_int(1,99);
-
-        // $image_url = cloudinary()->upload($image->getRealPath())->getSecurePath();
-        $image_url = $request->file('image')->storeOnCloudinary('deleteme/'.$pastas)->getSecurePath();
-
-        //save local
-        // $image->move(public_path('images'), $image_name);
-       
-        //method to save database
-        $image = new Post();
-        $image->image_name = $image_name;
-        $image->image_url = $image_url;
-
-        $image->save();
-
         
-
+        $result = $request->img->storeOnCloudinary();
         Post::create([
             'user_id' => auth()->user()->id,
             'title' => $request->title,
             'title' => $request->title,
             'slug' => \Str::slug($request->title),
             'category_id' => $request->category_id,
-            'image' => $image,
+            'img_url' => $result->getSecurePath(),
+            'img_id' => $result->getPublicId(),
             'description' => $request->description,
 
 

@@ -14,7 +14,7 @@
             @forelse ($posts as $post)
             <div class="d-flex justify-content-between align-items-center my-2">
                 <div class="d-flex align-items-center">
-                    <img width="125px" height="75px" src="{{ asset('storage/' . $post->image ) }}" alt="default" style="object-fit: cover;">
+                    <img width="125px" height="75px" src="{{ $post->img_url }}" alt="default" style="object-fit: cover;">
                     <div class="ml-3">
                         <p>{{ $post->title }}</p>
                         <p class="text-muted">{{ $post->created_at->format('Y-M-d') }} &middot; {{ $post->created_at->diffForHumans() }}</p>

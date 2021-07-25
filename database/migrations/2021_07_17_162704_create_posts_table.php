@@ -14,8 +14,8 @@ class CreatePostsTable extends Migration
     public function up()
     {
         Schema::create('posts', function (Blueprint $table) {
+            
             $table->id();
-
 
             $table->foreignId('user_id')->constrained();
             $table->foreignId('category_id')->constrained();
@@ -23,11 +23,12 @@ class CreatePostsTable extends Migration
 
             $table->string('title');
             $table->string('slug');
-            $table->string('image_name');
-            $table->string('image_url');
-            $table->string('image');
+            $table->string('img_url');
+            $table->string('img_id');
+
             $table->string('description');
             $table->timestamps();
+            
         });
     }
 
