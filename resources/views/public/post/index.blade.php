@@ -29,12 +29,12 @@
         </button>
       </div>
       <div class="modal-body">
-        <h3 class="">1.Ilhamudin Armain</h3>
-        <h3 class="">2.</h3>
-        <h3 class="">3.</h3>
-        <h3 class="">4.</h3>
-        <h3 class="">5.</h3>
-        <h3 class="">6.</h3>
+        <h3 class="">1.Nur Aini (201843500540) - Pencari Referensi</h3>
+        <h3 class="">2.Reza Saputra (201843500681) - Pencari Referensi</h3>
+        <h3 class="">3.Asep Gunawan (201843500116) - Pembuat Slide</h3>
+        <h3 class="">4.Agung Surya L (201843500439) - Pembuat Slide</h3>
+        <h3 class="">5.Ilham Nur Fikri (201843500073) - Content Creator</h3>
+        <h3 class="">6.Fahri Alpiansyah (201843500885) - Pembuat Program</h3>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
