@@ -5,12 +5,43 @@
   
   <section class="jumbotron text-center">
     <div class="container">
-      <h1>Album example</h1>
-      <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-      <p>
+      <h1>Sistem Pakar</h1>
+      <p class="lead text-muted">Aplikasi Deteksi Kerusakan Pada Printer berbasia web Dengan Menggunakan Metode Backward Chaining</p>
+      
+      {{-- <p>
         <a href="#" class="btn btn-primary my-2">Main call to action</a>
         <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-      </p>
+      </p> --}}
+      <!-- Button trigger modal -->
+      <img class="img-fluid" src="{{ URL::to('/assets/img/print.png') }}">
+<button type="button" class="btn btn-primary mt-5" data-toggle="modal" data-target="#exampleModal">
+  Daftar Kelompok
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Kelompok 5</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h3 class="">1.</h3>
+        <h3 class="">2.</h3>
+        <h3 class="">3.</h3>
+        <h3 class="">4.</h3>
+        <h3 class="">5.</h3>
+        <h3 class="">6.</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
     </div>
   </section>
   

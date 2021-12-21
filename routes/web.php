@@ -28,6 +28,25 @@ Route::get('/category/show/{category}', [App\Http\Controllers\PublicController::
 
 
 Auth::routes();
+Route::view('welcome', 'welcome');
+
+Route::view('cek-rabun-jauh', 'rabun-jauh.index');
+Route::get('cek-cartridge', [App\Http\Controllers\HomeController::class, 'cartridge'])->name('cartridge');
+Route::view('cek-belom-tau', 'rabun-senja.index');
+
+// Route::post('pilih-penyakit', 'CheckController@Index')->name('check.penyakit');
+Route::post('pilih-penyakit', [App\Http\Controllers\CheckController::class, 'index'])->name('check.penyakit');
+
+// , [App\Http\Controllers\PostController::class, 'store'])->name('post.store');
+
+Route::post('check.rabun-jauh', 'CheckController@CekRabunJauh')->name('check.rabun-jauh');
+Route::post('check.rabun-dekat', [App\Http\Controllers\CheckController::class, 'CekRabunDekat'])->name('check.rabun-dekat');
+Route::post('check.rabun-senja', 'CheckController@CekRabunSenja')->name('check.rabun-senja');
+
+
+
+
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
