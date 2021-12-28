@@ -7,7 +7,7 @@
             <div class="col-sm-12 my-5">
                 <div class="card">
                     <div class="card-header bg-info text-white">
-                        Cek Cartridge
+                        Jawab lah pertanyaan di bawah agar kerusakan printer anda dapat segera di ketahui!
                     </div>
                     <div class="card-body">
                         @if (session('status') === 'Garis')

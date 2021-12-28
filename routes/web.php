@@ -31,8 +31,8 @@ Auth::routes();
 Route::view('welcome', 'welcome');
 
 Route::view('cek-rabun-jauh', 'rabun-jauh.index');
-Route::get('cek-cartridge', [App\Http\Controllers\HomeController::class, 'cartridge'])->name('cartridge');
-Route::view('cek-belom-tau', 'rabun-senja.index');
+Route::get('cek-inkjet', [App\Http\Controllers\HomeController::class, 'cartridge'])->name('cartridge');
+Route::get('cek-laserjet', [App\Http\Controllers\HomeController::class, 'cartridge'])->name('cartridge');
 
 // Route::post('pilih-penyakit', 'CheckController@Index')->name('check.penyakit');
 Route::post('pilih-penyakit', [App\Http\Controllers\CheckController::class, 'index'])->name('check.penyakit');
