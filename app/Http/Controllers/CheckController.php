@@ -66,11 +66,11 @@ class CheckController extends Controller
         $request->berat == 1 ? $g1 = true : $g1 = false;
         $request->lembab == 1 ? $g2 = true : $g2 = false;
         $request->karet == 1 ? $g3 = true : $g3 = false;
-        $request->udara == 1 ? $g4 = false :$g4 = true;
-        $request->tersumbat == 1 ? $g5 = false :$g5 = true;
+        $request->udara == 1 ? $g4 = true :$g4 = false;
+        $request->tersumbat == 1 ? $g5 = true :$g5 = false;
         $request->tergores == 1 ? $g6 = false :$g6 = true;
         $request->pemasangan == 1 ? $g7 = false :$g7 = true;
-        $request->Kehabisan == 1 ? $g8 = false :$g8 = true;
+        $request->Kehabisan == 1 ? $g8 = true :$g8 = false;
         $request->settingan == 1 ? $g9 = false :$g9 = true;
         $request->habis == 1 ? $g10 = false :$g10 = true;
         $request->membeku == 1 ? $g11 = false :$g11 = true;
@@ -83,13 +83,13 @@ class CheckController extends Controller
         $request->pintu == 1 ? $g18 = true : $g18 = false;
 
         if ($g1 && $g2 && $g3 ) {
-            $status = 'Kena';
+            $status = 'PapperJam';
         } else if ($g4 && $g5 && $g6 && $g7 && $g8 && $g9  ) {
-            $status = 'Mungkin';
+            $status = 'Garis';
         } else if ($g10 && $g11  ) {
-            $status = 'Mungkin';
+            $status = 'Putus';
         } else if ($g12 && $g13 && $g14 && $g15 && $g16 && $g17 && $g18) {
-            $status = 'Kena';
+            $status = 'Lampu';
         } else {
             $status = 'Tidak';
         }

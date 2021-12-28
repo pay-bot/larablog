@@ -10,20 +10,31 @@
                         Cek Cartridge
                     </div>
                     <div class="card-body">
-                        @if (session('status') === 'Mungkin')
+                        @if (session('status') === 'Garis')
                             <div class="alert alert-warning">
-                                <b>Cartridge anda mungkin masih belum rusak.</b>
+                                <b>Hasil printer bergaris atau pudar</b>
                                 <br>
-                                Segera periksa konektor cartridge anda apakah sudah terpasang dengan baik.
                             </div>
-                        @elseif (session('status') === 'Kena')
+                        @elseif (session('status') === 'PapperJam')
                             <div class="alert alert-danger">
-                                <b>Kemungkinan printer anda mengalami paperjam</b>
+                                <b>Kemungkinan printer anda mengalami Papperjam</b>
                                 <br>
                             </div>
-                        @elseif (session('status') === 'Tidak')
+                        @elseif (session('status') === 'Putus')
                             <div class="alert alert-success">
-                                <b>Kemungkinan besar cartridge Anda tidak rusak.</b>
+                                <b>Hasil printer putus-putus</b>
+                                <br>
+                                
+                            </div>
+                            @elseif (session('status') === 'Lampu')
+                            <div class="alert alert-success">
+                                <b>Lampu indicator bermasalah</b>
+                                <br>
+                                
+                            </div>
+                            @elseif (session('status') === 'Tidak')
+                            <div class="alert alert-success">
+                                <b>Tidak teridentifikasi</b>
                                 <br>
                                 
                             </div>
