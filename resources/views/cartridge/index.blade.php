@@ -35,7 +35,7 @@
                             <div class="card mb-5">
                             <div class="form-group ">
                                 <div class="card-header ">
-                                <label class='' for="terdeteksi">1. Apakah cartridge Anda tidak terdeteksi oleh printer anda?</label>
+                                <label class='' for="terdeteksi">1. Apakah berat kertas < 70 gram ?</label>
                             </div>
                                 <div class="card-body">
                                 <div class=" form-check form-check-inline">
@@ -55,7 +55,7 @@
                         <div class="card mb-5">
                             <div class="form-group ">
                                 <div class="card-header ">
-                                <label for="warna">2. Apakah hasil cetak warna printer anda  terlihat normal ?</label>
+                                <label for="warna">2. Apakah kertas dalam keadaan lembab ?</label>
                             </div>
                             <div class="card-body">
                                 <div class="form-check form-check-inline">
@@ -73,7 +73,7 @@
                             <div class="card mb-5">
                             <div class="form-group ">
                                 <div class="card-header ">
-                                <label for="garis">3. Apakah hasil cetak printer anda terlihat bergaris?</label>
+                                <label for="garis">3. Apakah roll karet printer seret / macet ?</label>
                                 </div>
                                 <div class="card-body">
                                 <div class="form-check form-check-inline">
@@ -91,7 +91,7 @@
                             <div class="card mb-5">
                             <div class="form-group ">
                                 <div class="card-header ">
-                                <label for="penuh">4. Apakah hasil cetak printer anda penuh (tadak ada yang terpotong)?</label>
+                                <label for="penuh">4. Apakah ada gelembung udara dalam cartridge ?</label>
                                 </div>
                                 <div class="card-body">
                                 <div class="form-check form-check-inline">
@@ -109,7 +109,7 @@
                             <div class="card mb-5">
                             <div class="form-group ">
                                 <div class="card-header ">
-                                <label for="cartridge">5. Apakah fisik cartridge anda terlihat normal dan tidak ada goresan?</label>
+                                <label for="cartridge">5. Apakah ada tinta kering pada bagian print head ?</label>
                                 </div>
                                 <div class="card-body">
                                 <div class="form-check form-check-inline">
@@ -127,7 +127,7 @@
                             <div class="card mb-5">
                             <div class="form-group ">
                                 <div class="card-header ">
-                                <label for="konektor">6. Apakah fisik konektor cartridge anda terlihat normal dan tidak ada goresan?</label>
+                                <label for="konektor">6. Apakah print head masih dalam posisi dan keadaan tidak ada goresan ?</label>
                                 </div>
                                 <div class="card-body">
                                 <div class="form-check form-check-inline">
@@ -141,6 +141,224 @@
                             </div>
                             </div>
                             </div>
+
+                            <div class="card mb-5">
+                                <div class="form-group ">
+                                    <div class="card-header ">
+                                    <label for="konektor">7. Apakah pemasangan cartridge sudah sesuai ?</label>
+                                    </div>
+                                    <div class="card-body">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="konektor" id="konektor1" value="1" required>
+                                        <label class="form-check-label" for="konektor1">Iya</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="konektor" id="konektor2" value="0">
+                                        <label class="form-check-label" for="konektor2">Tidak</label>
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+
+                                <div class="card mb-5">
+                                    <div class="form-group ">
+                                        <div class="card-header ">
+                                        <label for="konektor">8. Apakah  ada isi tinta yang sudah habis ?</label>
+                                        </div>
+                                        <div class="card-body">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="konektor" id="konektor1" value="1" required>
+                                            <label class="form-check-label" for="konektor1">Iya</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="konektor" id="konektor2" value="0">
+                                            <label class="form-check-label" for="konektor2">Tidak</label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    </div>
+
+                                    <div class="card mb-5">
+                                        <div class="form-group ">
+                                            <div class="card-header ">
+                                            <label for="konektor">9. Apakah settingan printer pada komputer sudah benar ?</label>
+                                            </div>
+                                            <div class="card-body">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="konektor" id="konektor1" value="1" required>
+                                                <label class="form-check-label" for="konektor1">Iya</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="konektor" id="konektor2" value="0">
+                                                <label class="form-check-label" for="konektor2">Tidak</label>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        </div>
+
+                                        <div class="card mb-5">
+                                            <div class="form-group ">
+                                                <div class="card-header ">
+                                                <label for="konektor">10. Apakah tinta  sudah mulai habis ?</label>
+                                                </div>
+                                                <div class="card-body">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="konektor" id="konektor1" value="1" required>
+                                                    <label class="form-check-label" for="konektor1">Iya</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="konektor" id="konektor2" value="0">
+                                                    <label class="form-check-label" for="konektor2">Tidak</label>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            </div>
+
+                                            <div class="card mb-5">
+                                                <div class="form-group ">
+                                                    <div class="card-header ">
+                                                    <label for="konektor">11. Aapakah tinta membeku / mengeras ?</label>
+                                                    </div>
+                                                    <div class="card-body">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="konektor" id="konektor1" value="1" required>
+                                                        <label class="form-check-label" for="konektor1">Iya</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="konektor" id="konektor2" value="0">
+                                                        <label class="form-check-label" for="konektor2">Tidak</label>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                </div>
+
+                                                <div class="card mb-5">
+                                                    <div class="form-group ">
+                                                        <div class="card-header ">
+                                                        <label for="konektor">12. Apakah catridge sudah terpasang?</label>
+                                                        </div>
+                                                        <div class="card-body">
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="konektor" id="konektor1" value="1" required>
+                                                            <label class="form-check-label" for="konektor1">Iya</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="konektor" id="konektor2" value="0">
+                                                            <label class="form-check-label" for="konektor2">Tidak</label>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <div class="card mb-5">
+                                                        <div class="form-group ">
+                                                            <div class="card-header ">
+                                                            <label for="konektor">13. Apakah posisi catrigde sudah tepat ?</label>
+                                                            </div>
+                                                            <div class="card-body">
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="radio" name="konektor" id="konektor1" value="1" required>
+                                                                <label class="form-check-label" for="konektor1">Iya</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="radio" name="konektor" id="konektor2" value="0">
+                                                                <label class="form-check-label" for="konektor2">Tidak</label>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                        </div>
+
+                                                        <div class="card mb-5">
+                                                            <div class="form-group ">
+                                                                <div class="card-header ">
+                                                                <label for="konektor">14. Apakah cardridge yang dipasang sudah sesuai dengan printer tersebut ?</label>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio" name="konektor" id="konektor1" value="1" required>
+                                                                    <label class="form-check-label" for="konektor1">Iya</label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio" name="konektor" id="konektor2" value="0">
+                                                                    <label class="form-check-label" for="konektor2">Tidak</label>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                            </div>
+
+                                                            <div class="card mb-5">
+                                                                <div class="form-group ">
+                                                                    <div class="card-header ">
+                                                                    <label for="konektor">15. Apakah ada kertas pada printer ?</label>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                    <div class="form-check form-check-inline">
+                                                                        <input class="form-check-input" type="radio" name="konektor" id="konektor1" value="1" required>
+                                                                        <label class="form-check-label" for="konektor1">Iya</label>
+                                                                    </div>
+                                                                    <div class="form-check form-check-inline">
+                                                                        <input class="form-check-input" type="radio" name="konektor" id="konektor2" value="0">
+                                                                        <label class="form-check-label" for="konektor2">Tidak</label>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                                </div>
+
+                                                                <div class="card mb-5">
+                                                                    <div class="form-group ">
+                                                                        <div class="card-header ">
+                                                                        <label for="konektor">16. Apakah sudah menekan tombol resume / kertas masuk ?</label>
+                                                                        </div>
+                                                                        <div class="card-body">
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="konektor" id="konektor1" value="1" required>
+                                                                            <label class="form-check-label" for="konektor1">Iya</label>
+                                                                        </div>
+                                                                        <div class="form-check form-check-inline">
+                                                                            <input class="form-check-input" type="radio" name="konektor" id="konektor2" value="0">
+                                                                            <label class="form-check-label" for="konektor2">Tidak</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    </div>
+                                                                    </div>
+
+                                                                    <div class="card mb-5">
+                                                                        <div class="form-group ">
+                                                                            <div class="card-header ">
+                                                                            <label for="konektor">17. Apakah ada kertas yang menyangkut dalam printer ?</label>
+                                                                            </div>
+                                                                            <div class="card-body">
+                                                                            <div class="form-check form-check-inline">
+                                                                                <input class="form-check-input" type="radio" name="konektor" id="konektor1" value="1" required>
+                                                                                <label class="form-check-label" for="konektor1">Iya</label>
+                                                                            </div>
+                                                                            <div class="form-check form-check-inline">
+                                                                                <input class="form-check-input" type="radio" name="konektor" id="konektor2" value="0">
+                                                                                <label class="form-check-label" for="konektor2">Tidak</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        </div>
+                                                                        </div>
+
+                                                                        <div class="card mb-5">
+                                                                            <div class="form-group ">
+                                                                                <div class="card-header ">
+                                                                                <label for="konektor">18. Apakah pintu pada printer sudah tertutup sempurna ?</label>
+                                                                                </div>
+                                                                                <div class="card-body">
+                                                                                <div class="form-check form-check-inline">
+                                                                                    <input class="form-check-input" type="radio" name="konektor" id="konektor1" value="1" required>
+                                                                                    <label class="form-check-label" for="konektor1">Iya</label>
+                                                                                </div>
+                                                                                <div class="form-check form-check-inline">
+                                                                                    <input class="form-check-input" type="radio" name="konektor" id="konektor2" value="0">
+                                                                                    <label class="form-check-label" for="konektor2">Tidak</label>
+                                                                                </div>
+                                                                            </div>
+                                                                            </div>
+                                                                            </div>
+
+                            
 
                             
                         </form>
