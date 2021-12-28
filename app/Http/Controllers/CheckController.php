@@ -63,38 +63,33 @@ class CheckController extends Controller
 
     public function CekRabunDekat(Request $request)
     {
-        $request->terdeteksi == 1 ? $g1 = true : $g1 = false;
-        $request->warna == 1 ? $g2 = false : $g2 = true;
-        $request->garis == 1 ? $g3 = true : $g3 = false;
-        $request->penuh == 1 ? $g4 = false :$g4 = true;
+        $request->berat == 1 ? $g1 = true : $g1 = false;
+        $request->lembab == 1 ? $g2 = false : $g2 = true;
+        $request->karet == 1 ? $g3 = true : $g3 = false;
+        $request->udara == 1 ? $g4 = false :$g4 = true;
+        $request->tersumbat == 1 ? $g5 = false :$g5 = true;
+        $request->tergores == 1 ? $g6 = false :$g6 = true;
+        $request->pemasangan == 1 ? $g7 = false :$g7 = true;
+        $request->Kehabisan == 1 ? $g8 = false :$g8 = true;
+        $request->settingan == 1 ? $g9 = false :$g9 = true;
+        $request->habis == 1 ? $g10 = false :$g10 = true;
+        $request->membeku == 1 ? $g11 = false :$g11 = true;
+        $request->sempurna  == 1 ? $g12 = false :$g12 = true;
+        $request->posisi == 1 ? $g13 = false :$g13 = true;
+        $request->sesuai == 1 ? $g14 = false :$g14 = true;
+        $request->kertas == 1 ? $g15 = false :$g15 = true;
+        $request->menekan == 1 ? $g16 = false :$g16 = true;
+        $request->nyangkut == 1 ? $g17 = true : $g17 = false;
+        $request->pintu == 1 ? $g18 = true : $g18 = false;
 
-        $request->cartridge == 1 ? $p1 = true : $p1 = false;
-        $request->konektor == 1 ? $p2 = true : $p2 = false;
-
-        if ($g1 ) {
+        if ($g1 && $g2 && $g3 ) {
             $status = 'Kena';
-        } else if ($g2  ) {
+        } else if ($g4 && $g5 && $g6 && $g7 && $g8 && $g9  ) {
             $status = 'Mungkin';
-        } else if ($g3  ) {
+        } else if ($g10 && $g11  ) {
             $status = 'Mungkin';
-        } else if ($g1 && $g2 && $g3) {
+        } else if ($g12 && $g13 && $g14 && $g15 && $g16 && $g17 && $g18) {
             $status = 'Kena';
-        } else if ($p1 && $p2 ) {
-            $status = 'Tidak';
-        } else if ($g1 && $g2 && $p1 && $p2) {
-            $status = 'Mungkin';
-        } else if ($g2 && $g3 && $g4 ) {
-            $status = 'Kena';
-        } else if ($g4  ) {
-            $status = 'Mungkin';
-        
-        
-        } else if ($g2 && $g3 && $g4 ) {
-            $status = 'Kena';
-        }else if ($g1 && $p2) {
-            $status = 'Mungkin';
-        } else if ($g1 && $p2) {
-            $status = 'Mungkin';
         } else {
             $status = 'Tidak';
         }
