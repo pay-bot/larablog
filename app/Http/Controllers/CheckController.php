@@ -80,7 +80,7 @@ class CheckController extends Controller
         $request->kertas == 1 ? $g15 = false :$g15 = true;
         $request->menekan == 1 ? $g16 = false :$g16 = true;
         $request->nyangkut == 1 ? $g17 = true : $g17 = false;
-        $request->pintu == 1 ? $g18 = true : $g18 = false;
+        $request->pintu == 1 ? $g18 = false : $g18 = true;
 
         if ($g1 && $g2 && $g3 ) {
             $status = 'PapperJam';
