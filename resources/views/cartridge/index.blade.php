@@ -18,9 +18,8 @@
                             </div>
                         @elseif (session('status') === 'Kena')
                             <div class="alert alert-danger">
-                                <b>Kemungkinan besar cartridge Anda sudah rusak.</b>
+                                <b>Kemungkinan printer anda mengalami paperjam</b>
                                 <br>
-                                Sebaiknya, Anda mengganti cartridge anda
                             </div>
                         @elseif (session('status') === 'Tidak')
                             <div class="alert alert-success">

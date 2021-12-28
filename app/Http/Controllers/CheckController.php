@@ -64,7 +64,7 @@ class CheckController extends Controller
     public function CekRabunDekat(Request $request)
     {
         $request->berat == 1 ? $g1 = true : $g1 = false;
-        $request->lembab == 1 ? $g2 = false : $g2 = true;
+        $request->lembab == 1 ? $g2 = true : $g2 = false;
         $request->karet == 1 ? $g3 = true : $g3 = false;
         $request->udara == 1 ? $g4 = false :$g4 = true;
         $request->tersumbat == 1 ? $g5 = false :$g5 = true;
