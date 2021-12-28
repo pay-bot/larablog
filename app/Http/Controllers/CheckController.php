@@ -72,8 +72,8 @@ class CheckController extends Controller
         $request->pemasangan == 1 ? $g7 = false :$g7 = true;
         $request->Kehabisan == 1 ? $g8 = true :$g8 = false;
         $request->settingan == 1 ? $g9 = false :$g9 = true;
-        $request->habis == 1 ? $g10 = false :$g10 = true;
-        $request->membeku == 1 ? $g11 = false :$g11 = true;
+        $request->habis == 1 ? $g10 = true :$g10 = false;
+        $request->membeku == 1 ? $g11 = true :$g11 = false;
         $request->sempurna  == 1 ? $g12 = false :$g12 = true;
         $request->posisi == 1 ? $g13 = false :$g13 = true;
         $request->sesuai == 1 ? $g14 = false :$g14 = true;
