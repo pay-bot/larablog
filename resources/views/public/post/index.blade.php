@@ -6,7 +6,7 @@
   <section class="jumbotron text-center">
     <div class="container">
       <h1>Sistem Pakar</h1>
-      <p class="lead text-muted">Aplikasi Deteksi Kerusakan Pada Printer berbasia web Dengan Menggunakan Metode Backward Chaining</p>
+      <p class="lead text-muted">Aplikasi Deteksi Kerusakan Pada Printer berbasia web Dengan Menggunakan Metode Forward Chaining</p>
       
       {{-- <p>
         <a href="#" class="btn btn-primary my-2">Main call to action</a>
