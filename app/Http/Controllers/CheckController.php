@@ -18,11 +18,11 @@ class CheckController extends Controller
         }
 
         if ($request->penyakit === 'rabun_dekat') {
-            return redirect('cek-cartridge');
+            return redirect('cek-inkjet');
         }
 
         if ($request->penyakit === 'rabun_senja') {
-            return redirect('cek-belom-tau');
+            return redirect('cek-laserjet');
         }
     }
 
@@ -31,7 +31,7 @@ class CheckController extends Controller
         $request->kepala == 1 ? $g1 = true : $g1 = false;
         $request->lelah == 1 ? $g2 = true : $g2 = false;
         $request->kedip == 1 ? $g3 = true : $g3 = false;
-        $request->micing == 1 ? $g4 = true :$g4 = false;
+        $request->micing == 1 ? $g4 = true : $g4 = false;
         $request->gosok == 1 ? $g5 = true : $g5 = false;
         $request->kabur == 1 ? $g6 = true : $g6 = false;
 
@@ -66,27 +66,27 @@ class CheckController extends Controller
         $request->berat == 1 ? $g1 = true : $g1 = false;
         $request->lembab == 1 ? $g2 = true : $g2 = false;
         $request->karet == 1 ? $g3 = true : $g3 = false;
-        $request->udara == 1 ? $g4 = true :$g4 = false;
-        $request->tersumbat == 1 ? $g5 = true :$g5 = false;
-        $request->tergores == 1 ? $g6 = false :$g6 = true;
-        $request->pemasangan == 1 ? $g7 = false :$g7 = true;
-        $request->Kehabisan == 1 ? $g8 = true :$g8 = false;
-        $request->settingan == 1 ? $g9 = false :$g9 = true;
-        $request->habis == 1 ? $g10 = true :$g10 = false;
-        $request->membeku == 1 ? $g11 = true :$g11 = false;
-        $request->sempurna  == 1 ? $g12 = false :$g12 = true;
-        $request->posisi == 1 ? $g13 = false :$g13 = true;
-        $request->sesuai == 1 ? $g14 = false :$g14 = true;
-        $request->kertas == 1 ? $g15 = false :$g15 = true;
-        $request->menekan == 1 ? $g16 = false :$g16 = true;
+        $request->udara == 1 ? $g4 = true : $g4 = false;
+        $request->tersumbat == 1 ? $g5 = true : $g5 = false;
+        $request->tergores == 1 ? $g6 = false : $g6 = true;
+        $request->pemasangan == 1 ? $g7 = false : $g7 = true;
+        $request->Kehabisan == 1 ? $g8 = true : $g8 = false;
+        $request->settingan == 1 ? $g9 = false : $g9 = true;
+        $request->habis == 1 ? $g10 = true : $g10 = false;
+        $request->membeku == 1 ? $g11 = true : $g11 = false;
+        $request->sempurna  == 1 ? $g12 = false : $g12 = true;
+        $request->posisi == 1 ? $g13 = false : $g13 = true;
+        $request->sesuai == 1 ? $g14 = false : $g14 = true;
+        $request->kertas == 1 ? $g15 = false : $g15 = true;
+        $request->menekan == 1 ? $g16 = false : $g16 = true;
         $request->nyangkut == 1 ? $g17 = true : $g17 = false;
-        $request->pintu == 1 ? $g18 = true : $g18 = false;
+        $request->pintu == 1 ? $g18 = false : $g18 = true;
 
-        if ($g1 && $g2 && $g3 ) {
+        if ($g1 && $g2 && $g3) {
             $status = 'PapperJam';
-        } else if ($g4 && $g5 && $g6 && $g7 && $g8 && $g9  ) {
+        } else if ($g4 && $g5 && $g6 && $g7 && $g8 && $g9) {
             $status = 'Garis';
-        } else if ($g10 && $g11  ) {
+        } else if ($g10 && $g11) {
             $status = 'Putus';
         } else if ($g12 && $g13 && $g14 && $g15 && $g16 && $g17 && $g18) {
             $status = 'Lampu';
@@ -94,7 +94,7 @@ class CheckController extends Controller
             $status = 'Tidak';
         }
 
-        return redirect('cek-cartridge')->with('status', $status);
+        return redirect('cek-inkjet')->with('status', $status);
     }
 
     public function CekRabunSenja(Request $request)
@@ -125,6 +125,6 @@ class CheckController extends Controller
             $status = 'Tidak';
         }
 
-        return redirect('cek-belom-tau')->with('status', $status);
+        return redirect('cek-laserjet')->with('status', $status);
     }
 }
